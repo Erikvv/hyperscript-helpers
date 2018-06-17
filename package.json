@@ -3,7 +3,7 @@
   "version": "3.0.3",
   "description": "Terse syntax for hyperscript",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "src/index.d.ts",
   "config": {
     "commitizen": {
       "path": "node_modules/rb-conventional-changelog/"
@@ -32,8 +32,7 @@
     "lint": "./node_modules/.bin/eslint src/",
     "test": "npm run lint && mocha",
     "start": "./node_modules/.bin/babel src --out-dir=dist",
-    "ts-def": "./node_modules/.bin/babel-node ./generate-ts-def.js",
-    "prestart": "npm install && npm run ts-def",
+    "prestart": "npm install",
     "commit": "./node_modules/.bin/git-cz"
   },
   "repository": {
